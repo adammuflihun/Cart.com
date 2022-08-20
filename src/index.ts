@@ -15,10 +15,10 @@ $('.accordion').click(function () {
 
   $('.accordion .text-content-slide-landing ').hide();
   $('.accordion .vertical-text ').show();
+  $('.accordion .image-arrow-down ').show();
   $(this).find('.image-arrow-down').hide();
   $(this).find('.text-content-slide-landing ').show();
   $(this).find('.vertical-text ').hide();
-
   gsap.fromTo(
     g('.text-content-slide-landing'),
     { opacity: 0 },
