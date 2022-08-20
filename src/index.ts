@@ -23,4 +23,4 @@ $('.accordion').click(function () {
   );
 });
 console.log('mantap');
-console.log('mantap');
+console.log('okebos');
