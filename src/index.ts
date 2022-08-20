@@ -15,7 +15,7 @@ $('.accordion-header').click(function () {
   $('.accordion .image-arrow-down ').show();
   $(this).siblings('.image-arrow-down').hide();
   $(this).siblings('.text-content-slide-landing ').show();
-  $(this).siblings('.vertical-text ').hide();
+  $(this).find('.vertical-text ').hide();
   gsap.fromTo(
     '.text-content-slide-landing',
     { opacity: 0 },
