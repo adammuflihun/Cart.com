@@ -8,7 +8,7 @@ window.Webflow.push(() => {
   // greetUser(name);
 });
 
-console.log('oke');
+console.log('ancol');
 
 $('.accordion').click(function () {
   let g = gsap.utils.selector(this); // or use selector text like ".class"
