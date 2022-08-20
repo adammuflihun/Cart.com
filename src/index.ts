@@ -1,14 +1,11 @@
 // import { greetUser } from '$utils/greet';
 import { gsap } from 'gsap';
 
-console.log('oke');
 window.Webflow ||= [];
 window.Webflow.push(() => {
   const name = 'John Adam';
   // greetUser(name);
 });
-
-console.log('ancol');
 
 $('.accordion').click(function () {
   let g = gsap.utils.selector(this); // or use selector text like ".class"
@@ -25,3 +22,4 @@ $('.accordion').click(function () {
     { opacity: 1, duration: 0.5, delay: 0.6 }
   );
 });
+console.log('mantap');
