@@ -21,6 +21,8 @@ $('.accordion-header').click(function () {
     { opacity: 0 },
     { opacity: 1, duration: 0.5, delay: 0.6 }
   );
+  $('.accordion-header').css({ 'pointer-events': 'auto' });
+  $(this).css({ 'pointer-events': 'none' });
 });
 console.log('mantap');
 console.log('okebos');
