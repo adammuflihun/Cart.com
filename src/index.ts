@@ -24,5 +24,3 @@ $('.accordion-header').click(function () {
   $('.accordion-header').css({ 'pointer-events': 'auto' });
   $(this).css({ 'pointer-events': 'none' });
 });
-console.log('mantap');
-console.log('okebos');
