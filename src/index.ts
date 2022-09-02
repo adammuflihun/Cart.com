@@ -9,6 +9,7 @@ window.Webflow.push(() => {
 
 $('.accordion-header').click(function () {
   let g = gsap.utils.selector(this); // or use selector text like ".class"
+  console.log('he');
 
   $('.accordion .text-content-slide-landing ').hide();
   $('.accordion .vertical-text ').show();
