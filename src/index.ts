@@ -8,14 +8,16 @@ window.Webflow.push(() => {
 });
 
 $('.accordion-header').click(function () {
-  // let g = gsap.utils.selector(this); // or use selector text like ".class"
+  let g = gsap.utils.selector(this); // or use selector text like ".class"
 
   $('.accordion .text-content-slide-landing ').hide();
+  $('.accordion .text-content-slide-landing ').addClass('hide');
   $('.accordion .vertical-text ').show();
   $('.accordion .image-arrow-down ').show();
   $(this).siblings('.image-arrow-down').hide();
-  $(this).find('.vertical-text ').hide();
-  $(this).siblings('.text-content-slide-landing ').show();
+  $(this).find('.vertical-text').hide();
+  $(this).siblings('.text-content-slide-landing').removeClass('hide');
+  $(this).siblings('.text-content-slide-landing').show();
   gsap.fromTo(
     '.text-content-slide-landing',
     { opacity: 0 },
