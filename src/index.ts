@@ -3,11 +3,11 @@ import { gsap } from 'gsap';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  const name = 'John Adam';
+  // const name = 'John Adam';
   // greetUser(name);
 });
 
-$('.accordion-header').click(function (e) {
+$('.accordion-header').click(function () {
   // let g = gsap.utils.selector(this); // or use selector text like ".class"
 
   $('.accordion .text-content-slide-landing ').hide();
