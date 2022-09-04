@@ -39,6 +39,7 @@ $(document).ready(function () {
 
   $('#button-learn-more-head').on('click', function () {
     $('.accordion.second').find('.vertical-text').hide();
+    $('.accordion.active').hide();
 
     $('.accordion.second')
       .find('.text-content-slide-landing')
