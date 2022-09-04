@@ -38,12 +38,12 @@ $(document).ready(function () {
   });
 
   $('#button-learn-more-head').on('click', function () {
-    $('.accordion.second').find('.vertical-text').hide();
+    $('.accordion.second').find('.vertical-text').css({ display: 'none' });
     $('.accordion.active').hide();
 
     $('.accordion.second')
       .find('.text-content-slide-landing')
-      .css({ display: 'block', height: '100%', width: '100%' });
+      .css({ display: 'block', height: 'auto', width: 'auto' });
     gsap.fromTo(
       $('.second').find('.text-content-slide-landing'),
       { opacity: 0 },
