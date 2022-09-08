@@ -73,7 +73,7 @@ window.Webflow.push(() => {
         $('#button-channel').click(function () {
           $('html, body').animate(
             {
-              scrollTop: $('#section-channel').position().top + 200,
+              scrollTop: $('#section-channel').position().top + 150,
             },
             0
           );
@@ -82,7 +82,7 @@ window.Webflow.push(() => {
         $('#button-fulfillment').click(function () {
           $('html, body').animate(
             {
-              scrollTop: $('#section-fulfillment').position().top + 300,
+              scrollTop: $('#section-fulfillment').position().top + 200,
             },
             0
           );
@@ -91,7 +91,7 @@ window.Webflow.push(() => {
         $('#button-customer').click(function () {
           $('html, body').animate(
             {
-              scrollTop: $('#section-customer').position().top + 400,
+              scrollTop: $('#section-customer').position().top + 300,
             },
             0
           );
@@ -100,7 +100,7 @@ window.Webflow.push(() => {
         $('#button-unified').click(function () {
           $('html, body').animate(
             {
-              scrollTop: $('#section-unified').position().top + 500,
+              scrollTop: $('#section-unified').position().top + 350,
             },
             0
           );
