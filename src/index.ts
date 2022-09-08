@@ -7,9 +7,6 @@ window.Webflow.push(() => {
   // greetUser(name);
 });
 
-// $('.accordion-header').on('click', function () {
-//   $(this).parent('.accordion').css('width', '50%', 'transition', '.5s');
-// });
 $(document).ready(function () {
   $('.accordion-header').click(function () {
     let g = gsap.utils.selector(this); // or use selector text like ".class"
@@ -29,8 +26,6 @@ $(document).ready(function () {
       { opacity: 1, duration: 1, delay: 0.3, autoAlpha: 1 }
     );
 
-    gsap.to($(this).parent('.accordion .text-content-slide-landing'), { opacity: 0 });
-
     $('.accordion-header').css({ 'pointer-events': 'auto' });
     $(this).css({ 'pointer-events': 'none' });
     $('#accordion1').css({ display: 'none' });
@@ -38,12 +33,16 @@ $(document).ready(function () {
   });
 
   $('#button-learn-more-head').on('click', function () {
-    $('.accordion.second').find('.vertical-text').css({ display: 'none' });
+    $('.accordion.second')
+      .find('.vertical-text')
+      .css({ display: 'none', 'pointer-events': 'none' });
+    $('.accordion.second').find('.accordion-header').css({ 'pointer-events': 'none' });
+
     $('.accordion.active').hide();
 
     $('.accordion.second')
       .find('.text-content-slide-landing')
-      .css({ display: 'block', height: 'auto', width: 'auto' });
+      .css({ display: 'block', height: '100%', width: '100%' });
     gsap.fromTo(
       $('.second').find('.text-content-slide-landing'),
       { opacity: 0 },
@@ -51,3 +50,64 @@ $(document).ready(function () {
     );
   });
 });
+
+$(window)
+  .resize(function () {
+    if (window.matchMedia('(max-width: 991px)').matches) {
+      $('#button-storefront').click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: $('#section-storefront').position().top + 20,
+          },
+          0
+        );
+      });
+
+      $('#button-growth').click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: $('#section-growth').position().top + 100,
+          },
+          0
+        );
+      });
+
+      $('#button-channel').click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: $('#section-channel').position().top + 200,
+          },
+          0
+        );
+      });
+
+      $('#button-fulfillment').click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: $('#section-fulfillment').position().top + 300,
+          },
+          0
+        );
+      });
+
+      $('#button-customer').click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: $('#section-customer').position().top + 400,
+          },
+          0
+        );
+      });
+
+      $('#button-unified').click(function () {
+        $('html, body').animate(
+          {
+            scrollTop: $('#section-unified').position().top + 500,
+          },
+          0
+        );
+      });
+    } else {
+    }
+  })
+  .resize(); // trigger on page load
