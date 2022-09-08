@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 
 window.Webflow ||= [];
 window.Webflow.push(() => {
-  console.log('loading from vercel');
+  console.log('loading from local');
 
   $(document).ready(function () {
     $('.accordion-header').click(function () {
@@ -21,7 +21,7 @@ window.Webflow.push(() => {
       gsap.fromTo(
         $(this).siblings('.text-content-slide-landing'),
         { opacity: 0 },
-        { opacity: 1, duration: 1, delay: 0.3, autoAlpha: 1 }
+        { opacity: 1, duration: 0.3, delay: 0.3, autoAlpha: 1 }
       );
 
       $('.accordion-header').css({ 'pointer-events': 'auto' });
