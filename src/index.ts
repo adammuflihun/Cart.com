@@ -40,7 +40,7 @@ window.Webflow.push(() => {
 
       $('.accordion.second')
         .find('.text-content-slide-landing')
-        .css({ display: 'block', height: '100%', width: '100%' });
+        .css({ display: 'flex', height: '100%', width: '100%' });
       gsap.fromTo(
         $('.second').find('.text-content-slide-landing'),
         { opacity: 0 },
