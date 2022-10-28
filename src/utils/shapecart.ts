@@ -12,7 +12,7 @@ export const shapecart = () => {
     duration: 0.7,
     x: 150,
     y: 100,
-    ease: 'Power4.easeOut',
+    ease: 'power3.inOut',
     stagger: { each: 0.2, from: 'end' },
     autoAlpha: 0,
   });
