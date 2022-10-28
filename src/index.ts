@@ -1,9 +1,14 @@
 // import { greetUser } from '$utils/greet';
 import { gsap } from 'gsap';
 
+import { shapecart } from '$utils/shapecart';
+
+// $('.shapecart').css('visibility', 'hidden');
+
 window.Webflow ||= [];
 window.Webflow.push(() => {
   console.log('loading from local');
+  shapecart();
 
   $(document).ready(function () {
     $('.accordion-header').click(function () {
