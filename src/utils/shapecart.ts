@@ -9,11 +9,11 @@ export const shapecart = () => {
   gsap.from(elshapecart, {
     // opacity: 0,
     delay: 0.2,
-    duration: 0.7,
+    duration: 0.35,
     x: 150,
     y: 100,
-    ease: 'power3.inOut',
-    stagger: { each: 0.2, from: 'end' },
+    ease: 'Power4.inandOut',
+    stagger: { each: 0.1, from: 'end' },
     autoAlpha: 0,
   });
 };
